@@ -1,7 +1,7 @@
 # Musical_Marlin
 Make your 3D printer play music while It heats
 
-##Introduction
+## Introduction
 If you own or have used a 3D printer, you doubtless know that, unless your's is equipped with "silent" stepper drivers, 3D printers make a whole range of interesting noises while they operate.
 
 A second thing you probably know if you 3D print often is that it can take a little while for both the hotend and the bed to come up to temperature in preparation for a print job.
