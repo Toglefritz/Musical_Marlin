@@ -740,6 +740,11 @@ XYZ_CONSTS_FROM_CONFIG(signed char, home_dir, HOME_DIR);
  * ***************************************************************************
  */
 
+// Play a little tune
+void play_a_tune() {
+  // TODO add code to play music
+}
+
 void stop();
 
 void get_available_commands();
@@ -11112,6 +11117,14 @@ void process_next_command() {
         case 5:
           gcode_M5();     // M5 - turn spindle/laser off
           break;          // synchronizes with movement commands
+          
+      // Interpret custom M-code 
+      case 100:
+        // TODO add code to play music, the code below is just a test
+        play_a_tune(); 
+        }
+        break;
+        
       #endif
       case 17: // M17: Enable all stepper motors
         gcode_M17();
@@ -14003,4 +14016,3 @@ void loop()
   endstops.report_state();
   idle();
 }
-
