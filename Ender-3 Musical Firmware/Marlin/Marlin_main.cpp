@@ -11117,13 +11117,6 @@ void process_next_command() {
         case 5:
           gcode_M5();     // M5 - turn spindle/laser off
           break;          // synchronizes with movement commands
-          
-      // Interpret custom M-code 
-      case 100:
-        // TODO add code to play music, the code below is just a test
-        play_a_tune(); 
-        }
-        break;
         
       #endif
       case 17: // M17: Enable all stepper motors
@@ -11641,6 +11634,11 @@ void process_next_command() {
           gcode_M900();
           break;
       #endif
+
+      // Interpret custom M-code 
+      case 901:
+        play_a_tune(); 
+        break;
 
       #if ENABLED(HAVE_TMC2130)
         case 906: // M906: Set motor current in milliamps using axis codes X, Y, Z, E
@@ -13698,7 +13696,6 @@ void stop() {
  *    • status LEDs
  */
 void setup() {
-
   #if ENABLED(MAX7219_DEBUG)
     Max7219_init();
   #endif
