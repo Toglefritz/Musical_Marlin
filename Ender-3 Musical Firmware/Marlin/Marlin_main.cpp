@@ -739,12 +739,7 @@ XYZ_CONSTS_FROM_CONFIG(signed char, home_dir, HOME_DIR);
  * ******************************** FUNCTIONS ********************************
  * ***************************************************************************
  */
-
-// Play a little tune
-void play_a_tune() {
-  // TODO add code to play music
-}
-
+ 
 void stop();
 
 void get_available_commands();
@@ -11634,11 +11629,6 @@ void process_next_command() {
           gcode_M900();
           break;
       #endif
-
-      // Interpret custom M-code 
-      case 901:
-        play_a_tune(); 
-        break;
 
       #if ENABLED(HAVE_TMC2130)
         case 906: // M906: Set motor current in milliamps using axis codes X, Y, Z, E
