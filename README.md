@@ -1,20 +1,20 @@
-# Musical_Marlin  :musical_score
+# Musical_Marlin  :musical_score:
 Make your 3D printer play music!
 
-## Introduction  :wave:
+## Introduction
 If you own or have used a 3D printer, you doubtless know that, unless your's is equipped with "silent" stepper drivers, 3D printers make a whole range of... interesting... noises while they operate.
 
 Well, with the firmware in this repository, you can make all those random noises serve a higher purpose. By making use of acoustic science and clever timing, we will make your 3D printer play a little tune. The cool thing is that we will perform this upgrade without adding any hardware to your printer - no speakers even!
 
 We will make use of an age-old hack to play music using stepper motors by making them vibrate at specific frequencies. With a couple modifications to the Marlin firmware, your 3D printer can play a lovely song before your print begins.
 
-## Installation  :arrow_forward:
+## Installation
 Instructions for installing the firmware onto your Creatlity Ender 3 and creating music files to place on the SD card can be found on Instructables [link TBA after Instructable is published].
 
-## Translating Music to G-Code  :musical_keyboard:
+## Translating Music to G-Code
 Here's the thing: 3D printers are not, as it turns out, built to play music. The controller inside the Ender 3 3D printer is, in essence, just a G-code interpreter. Therefore, the crux of this project is to translate musical notes to G-code.
 
-### What is a Note?  :musical_note:
+### What is a Note?
 To begin the explanation of how musical notation can be translated to into G-code, we first need to understand what a musical note represents. Musical notes encode two pieces of information: a frequency and a duration.
 
 First, musical notes express a tonal frequency. Each letter in music (A, B, C, D, E, F, G, plus their various flats/sharps) is [defined as a frequency of sound in Hz](https://en.wikipedia.org/wiki/Piano_key_frequencies). There is a spreadsheet in this repository that lists the frequencies for three octaves of a musical scale.
