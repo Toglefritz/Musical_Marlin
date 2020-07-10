@@ -1,4 +1,4 @@
-# Musical_Marlin  :musical_score:
+:musical_score: # Musical_Marlin  :musical_score:
 Make your 3D printer play music!
 
 ## Introduction
