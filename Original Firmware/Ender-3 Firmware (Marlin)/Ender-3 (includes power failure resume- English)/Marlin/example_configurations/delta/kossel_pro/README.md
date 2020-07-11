@@ -1,5 +1,3 @@
-# Example Configuration for OpenBeam Kossel Pro [BRAINWAVE_PRO](http://www.openbeamusa.com/3d-printers/kossel/)
-* Configuration files for the **Openbeam Kossel Pro** as delivered in their KickStarter distribution
-
-I [@Wackerbarth](https://github.com/Wackerbarth) tested this version on my Kossel Pro and Arduino 1.6.5 for Mac.
-This configuration is a transition to merge Terence Tam's configuration with up-to-date Marlin source and a current Arduino IDE
+version https://git-lfs.github.com/spec/v1
+oid sha256:4e1c6bb5de8747894516d280ffe017f8607059f25663c76f4924bda79fd0d938
+size 455

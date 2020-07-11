@@ -1,2 +1,3 @@
-# Songs
-This directory contains a set of spreadsheets used to generate strings of G-code representing songs. The process of translating musical notes to G-code commands is described in the main directory of this repository.
+version https://git-lfs.github.com/spec/v1
+oid sha256:f53265a47784c54f97726b4b07ebf41af3e0e8401aae139721ee0147c7d97bff
+size 224

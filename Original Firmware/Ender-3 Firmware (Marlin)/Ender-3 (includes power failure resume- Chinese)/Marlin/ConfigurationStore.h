@@ -1,22 +1,3 @@
-#ifndef CONFIG_STORE_H
-#define CONFIG_STORE_H
-
-#include "Configuration.h"
-
-void Config_ResetDefault();
-
-#ifndef DISABLE_M503
-void Config_PrintSettings();
-#else
-FORCE_INLINE void Config_PrintSettings() {}
-#endif
-
-#ifdef EEPROM_SETTINGS
-void Config_StoreSettings();
-void Config_RetrieveSettings();
-#else
-FORCE_INLINE void Config_StoreSettings() {}
-FORCE_INLINE void Config_RetrieveSettings() { Config_ResetDefault(); Config_PrintSettings(); }
-#endif
-
-#endif//CONFIG_STORE_H
+version https://git-lfs.github.com/spec/v1
+oid sha256:31d61ecaa24bbcee905402a3ce5f10262415d1346c7c19fb1f5c7e45accb44c2
+size 472
